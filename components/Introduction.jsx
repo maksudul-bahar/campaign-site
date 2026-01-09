@@ -30,13 +30,22 @@ export default function Introduction() {
 
           </p>
 
-          <p className="text-gray-700 leading-relaxed">
-            ধন্যবাদান্তে,
-তাছমিমা মাহফুজ (জেরিন)
-অর্থনীতি বিভাগ, ২০২১-২২ শিক্ষাবর্ষ
-আইন ও মানবাধিকার সম্পাদক পদপ্রার্থী
-ব্যালট নং: ৩
-          </p>
+          <p className="text-gray-700 text-lg leading-relaxed space-y-1">
+  <span className="block">ধন্যবাদান্তে,</span>
+  <span className="block font-semibold">
+    তাছমিমা মাহফুজ (জেরিন)
+  </span>
+  <span className="block">
+    অর্থনীতি বিভাগ, ২০২১–২২ শিক্ষাবর্ষ
+  </span>
+  <span className="block">
+    আইন ও মানবাধিকার সম্পাদক পদপ্রার্থী
+  </span>
+  <span className="block font-semibold text-purple-700">
+    ব্যালট নং: ৩
+  </span>
+</p>
+
 
           {/* ✅ PDF BUTTON — EXACTLY BELOW INTRODUCTION */}
           {/* <div className="mt-8">
