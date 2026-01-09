@@ -28,12 +28,12 @@ export default function Hero() {
         {/* CENTER */}
         <div className="text-center space-y-3">
           <div className="bg-gradient-to-r from-purple-700 to-indigo-700 text-white px-8 py-3 text-lg md:text-xl font-bold tracking-wide shadow-lg rounded-lg">
-            প্যানেল–সাধারণের ঐক্যের কণ্ঠস্বর
+            প্যানেল–সাধারণের ঐক্যস্বর
           </div>
 
           {/* SLOGAN */}
           <p className="text-purple-700 text-sm md:text-base font-semibold">
-            “নৈতিকতার পথে চাই দৃঢ় কণ্ঠস্বর!”
+            সাধারণের কাফেলার জয় হোক
           </p>
         </div>
 
