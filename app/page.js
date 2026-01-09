@@ -9,11 +9,12 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Introduction />
+      
       <Manifesto />
-      <Profile />
+      <Introduction />
+      {/* <Profile />
       <Gallery />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }

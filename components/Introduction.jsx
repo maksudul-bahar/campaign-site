@@ -35,7 +35,7 @@ export default function Introduction() {
           </p>
 
           {/* ✅ PDF BUTTON — EXACTLY BELOW INTRODUCTION */}
-          <div className="mt-8">
+          {/* <div className="mt-8">
             <a
               href="/manifesto.pdf"
               target="_blank"
@@ -43,7 +43,7 @@ export default function Introduction() {
             >
               📄 সম্পূর্ণ ইশতেহার পড়ুন (PDF)
             </a>
-          </div>
+          </div> */}
         </motion.div>
 
         <motion.div
