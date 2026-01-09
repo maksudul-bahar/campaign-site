@@ -1,52 +1,45 @@
+// 
+
 'use client';
 import { motion } from 'framer-motion';
 
 export default function Profile() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-purple-50 via-yellow-50 to-white py-24 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+    <section className="bg-gradient-to-br from-purple-50 via-yellow-50 to-white py-24 px-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
 
-        {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          
-
           <p className="text-gray-700 mb-8 leading-relaxed">
-            Dedicated to ethical leadership and student advocacy, she brings academic
-            excellence and hands-on experience to the role of Secretary of Law & Human Rights.
+            আমি সবসময় ন্যায়, মানবাধিকার ও শিক্ষার্থীদের পক্ষে দাঁড়িয়েছি।
+            প্রশাসনিক অন্যায়, আইনের অপপ্রয়োগ কিংবা কণ্ঠরোধের বিরুদ্ধে
+            আমি কখনো আপস করিনি।
           </p>
 
           <ul className="space-y-4 text-gray-800">
-            <li><span className="font-semibold">Name:</span> Tasmima Mahfuj Jerin</li>
-            <li><span className="font-semibold">Department:</span> Economics</li>
-            <li><span className="font-semibold">Session:</span> 2021–2022</li>
-            <li><span className="font-semibold">Experience:</span> Legal Volunteer</li>
+            <li><b>নাম:</b> তাসমিমা মাহফুজ জেরিন</li>
+            <li><b>বিভাগ:</b> অর্থনীতি</li>
+            <li><b>সেশন:</b> ২০২১–২০২২</li>
+            <li><b>পদ:</b> আইন ও মানবাধিকার সম্পাদক (প্রার্থী)</li>
+            <li><b>ব্যালট নং:</b> ৩</li>
           </ul>
         </motion.div>
 
-        {/* Image Side */}
         <motion.div
-          className="relative"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="rounded-3xl overflow-hidden shadow-xl bg-white">
-            <img
-              src="/photos/profile.jpg"
-              alt="Candidate Profile"
-              className="w-full h-[420px] object-cover"
-            />
-          </div>
-
-          {/* Soft Decorative Shapes */}
-          <div className="absolute -top-8 -right-8 w-32 h-32 bg-emerald-200 rounded-full opacity-40" />
-          <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-lime-200 rounded-full opacity-30" />
+          <img
+            src="/photos/profile.jpg"
+            alt="Candidate Profile"
+            className="rounded-3xl shadow-xl h-[420px] object-cover"
+          />
         </motion.div>
       </div>
     </section>

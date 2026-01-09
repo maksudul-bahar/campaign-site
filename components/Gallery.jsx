@@ -18,8 +18,7 @@ export default function Gallery() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 3000); // change image every 3s
-
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -27,17 +26,19 @@ export default function Gallery() {
     <section className="py-24 px-6 bg-gradient-to-br from-purple-50 via-yellow-50 to-white">
       <div className="max-w-4xl mx-auto text-center">
 
-        <h2 className="text-3xl font-bold mb-10 text-gray-900">
-          Moments & Activities
+        {/* Bangla Title */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-gray-900">
+          আমার কার্যক্রম ও মুহূর্তগুলো
         </h2>
 
+        {/* Gallery Slider */}
         <div className="relative h-[320px] md:h-[420px] rounded-3xl overflow-hidden shadow-xl bg-white">
 
           <AnimatePresence mode="wait">
             <motion.img
               key={index}
               src={images[index]}
-              alt="Gallery image"
+              alt="ক্যাম্পাস কার্যক্রম"
               className="absolute w-full h-full object-cover"
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
@@ -54,7 +55,7 @@ export default function Gallery() {
             <span
               key={i}
               className={`w-3 h-3 rounded-full transition ${
-                i === index ? 'bg-primary' : 'bg-gray-300'
+                i === index ? 'bg-primary scale-110' : 'bg-gray-300'
               }`}
             />
           ))}
